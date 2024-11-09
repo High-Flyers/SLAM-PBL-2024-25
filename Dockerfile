@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     ros-humble-gazebo-ros-pkgs \
     ros-humble-px4
 
-# Skonfiguruj środowisko ROS 2
+# Skonfiguruj środowisko ROS 2 
 SHELL ["/bin/bash", "-c"]
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 
