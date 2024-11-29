@@ -1,5 +1,5 @@
 TO DO:
-- poprawić rozmiary (skalę) i lokalizacje elementów w urdf
 - dodać wszystkie tagi do gazebo
 - zrobić gazebo by działało - już jest wszystko, brakuje tylko tagów w urdf
+- dopasować w pliku params rozmiary naszego jeździka
 

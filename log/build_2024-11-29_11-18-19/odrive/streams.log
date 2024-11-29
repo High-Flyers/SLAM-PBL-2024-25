@@ -1,0 +1,23 @@
+[0.016s] Invoking command in '/home/kuba/PBL/build/odrive': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive -- -j16 -l16
+[0.033s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.126s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.132s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:43 (_install):
+[0.132s]   _install does not recognize sub-command DESTINATION
+[0.132s] Call Stack (most recent call first):
+[0.132s]   CMakeLists.txt:14 (install)
+[0.133s] 
+[0.133s] [0m
+[0.133s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.186s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.186s] -- Configured cppcheck include dirs: 
+[0.186s] -- Configured cppcheck exclude dirs and/or files: 
+[0.186s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.187s] -- Added test 'lint_cmake' to check CMake code style
+[0.188s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.191s] -- Added test 'uncrustify' to check C / C++ code style
+[0.191s] -- Configured uncrustify additional arguments: 
+[0.192s] -- Added test 'xmllint' to check XML markup files
+[0.192s] -- Configuring incomplete, errors occurred!
+[0.192s] See also "/home/kuba/PBL/build/odrive/CMakeFiles/CMakeOutput.log".
+[0.194s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.195s] Invoked command in '/home/kuba/PBL/build/odrive' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive -- -j16 -l16

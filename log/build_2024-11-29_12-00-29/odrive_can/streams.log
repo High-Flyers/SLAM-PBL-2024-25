@@ -1,0 +1,5 @@
+[0.021s] Invoking command in '/home/kuba/PBL/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_can -- -j16 -l16
+[0.037s] [0mCMake Error: The source directory "/home/kuba/PBL/src/ros_odrive/odrive_node" does not exist.
+[0.037s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.037s] gmake: *** [Makefile:1517: cmake_check_build_system] Error 1
+[0.039s] Invoked command in '/home/kuba/PBL/build/odrive_can' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_can -- -j16 -l16

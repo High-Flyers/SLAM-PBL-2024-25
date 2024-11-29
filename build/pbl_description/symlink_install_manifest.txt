@@ -1,5 +1,6 @@
 /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/common_properties.urdf.xacro
 /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base.urdf.xacro
+/home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base_gazebo.xacro
 /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/salamanca.urdf.xacro
 /home/kuba/PBL/install/pbl_description/share/pbl_description//launch/pbl_salamanca_display.launch.xml
 /home/kuba/PBL/install/pbl_description/share/pbl_description//rviz/pbl_rviz_config.rviz

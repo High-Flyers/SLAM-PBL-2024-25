@@ -44,7 +44,9 @@
     <xacro:property name="battery_height" value="0.062" />
     <xacro:property name="battery_mass" value="1.974" />
 
-    <link name="base_link">
+    <link name="base_footprint"></link>
+    
+    <link name="base_link">    
         <visual>
             <geometry>
                 <mesh filename="package://pbl_description/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
@@ -56,14 +58,13 @@
             <geometry>
                 <mesh filename="package://pbl_description/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
-            <origin xyz="${-base_length/2} 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
 
         <xacro:box_inertia m="${base_mass}" l="${base_length}" w="${base_width}" h="${base_height}"
             xyz="0 0 0" rpy="0 0 0" />
     </link>
 
-    <link name="base_footprint"></link>
 
     <link name="castor_wheel">
         <visual>
@@ -228,7 +229,7 @@
         <child link="odrive_bothwheel_l" />
         <origin xyz="${odrive_radius + 0.04} ${(-base_width / 2) - (odrive_height/2)} ${base_height/2}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
-        <limit lower="-1.5708" upper="1.5708" effort="1" velocity="10" />
+        <limit lower="-3.14159" upper="3.14159" effort="1" velocity="10" />
     </joint>
 
     <joint name="right_wheel_joint" type="revolute">
@@ -236,6 +237,6 @@
         <child link="odrive_bothwheel_r" />
         <origin xyz="${odrive_radius + 0.04} ${(base_width / 2) + (odrive_height/2)} ${base_height/2}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
-        <limit lower="-1.5708" upper="1.5708" effort="1" velocity="10" />
+        <limit lower="-3.14159" upper="3.14159" effort="1" velocity="10" />
     </joint>
 </robot>

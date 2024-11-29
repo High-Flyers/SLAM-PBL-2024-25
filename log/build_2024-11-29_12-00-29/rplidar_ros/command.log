@@ -1,0 +1,1 @@
+Invoking command in '/home/kuba/PBL/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kuba/PBL/src/rplidar_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kuba/PBL/install/rplidar_ros

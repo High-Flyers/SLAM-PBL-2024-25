@@ -1,0 +1,1 @@
+Invoking command in '/home/kuba/PBL/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kuba/PBL/src/ros_odrive/odrive_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kuba/PBL/install/odrive_can

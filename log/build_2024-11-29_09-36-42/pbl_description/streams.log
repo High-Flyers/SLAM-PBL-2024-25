@@ -1,0 +1,51 @@
+[0.014s] Invoking command in '/home/kuba/PBL/build/pbl_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_description -- -j16 -l16
+[0.042s] Invoked command in '/home/kuba/PBL/build/pbl_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_description -- -j16 -l16
+[0.062s] Invoking command in '/home/kuba/PBL/build/pbl_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_description
+[0.067s] -- Install configuration: ""
+[0.068s] -- Execute custom install script
+[0.068s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/common_properties.urdf.xacro
+[0.068s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base.urdf.xacro
+[0.068s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base_gazebo.xacro
+[0.068s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/salamanca.urdf.xacro
+[0.068s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//launch/pbl_salamanca_display.launch.xml
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//rviz/pbl_rviz_config.rviz
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Castor_Wheel_50X19_v4.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Cover v62.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Intel_RealSense_Depth_Camera_D435_v3.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/JetsonXavier_mount_corrected v4.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Jetson_nano_v2_v2.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive S1 Housing Assembly v4 1.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive S1 Housing Assembly v4.stl
+[0.069s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive_Botwheel_v4.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/OSB_18mm_v28.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Realsens adapter v3.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Tattu_6S_22_2V_10000Ah_v4.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/base_link.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/castor_wheel.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/dystans v1.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/jetson_nano.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/lidar mount znowu v8.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/odrive s1 mount v6 1.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/odrive s1 mount v6.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/realsense_camera.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/rplidar_a2_mount.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/rplidar_a2m4_r1_v3.stl
+[0.070s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/tattu_battery.stl
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/wheel mount adapter v14 1.stl
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/wheel mount adapter v14.stl
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/package_run_dependencies/pbl_description
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/parent_prefix_path/pbl_description
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/ament_prefix_path.sh
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/ament_prefix_path.dsv
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/path.sh
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/path.dsv
+[0.071s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.bash
+[0.072s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.sh
+[0.072s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.zsh
+[0.072s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.dsv
+[0.072s] -- Symlinking: /home/kuba/PBL/install/pbl_description/share/pbl_description/package.dsv
+[0.079s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/packages/pbl_description
+[0.079s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/cmake/pbl_descriptionConfig.cmake
+[0.079s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/cmake/pbl_descriptionConfig-version.cmake
+[0.080s] -- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/package.xml
+[0.087s] Invoked command in '/home/kuba/PBL/build/pbl_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_description

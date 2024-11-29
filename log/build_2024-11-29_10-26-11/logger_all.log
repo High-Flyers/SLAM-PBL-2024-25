@@ -1,0 +1,265 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x746a77b30c10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x746a77b30700>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x746a77b30700>>)
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.192s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kuba/PBL'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/odrive_ros2_control) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odrive_ros2_control' with type 'ros.ament_cmake' and name 'odrive_ros2_control'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extensions ['colcon_pkg']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extension 'colcon_pkg'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_bringup) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pbl_bringup' with type 'ros.ament_cmake' and name 'pbl_bringup'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extensions ['ignore', 'ignore_ament_install']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extension 'ignore'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extension 'ignore_ament_install'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/pbl_description) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pbl_description' with type 'ros.ament_cmake' and name 'pbl_description'
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.205s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.206s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.219s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.220s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/kuba/PBL_SLAM_ws/install
+[0.221s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 378 installed packages in /opt/ros/humble
+[0.228s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_args' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target' from command line to 'None'
+[0.261s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'odrive_ros2_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.262s] DEBUG:colcon.colcon_core.verb:Building package 'odrive_ros2_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kuba/PBL/build/odrive_ros2_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kuba/PBL/install/odrive_ros2_control', 'merge_install': False, 'path': '/home/kuba/PBL/src/odrive_ros2_control', 'symlink_install': True, 'test_result_base': None}
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_target' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.262s] DEBUG:colcon.colcon_core.verb:Building package 'pbl_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kuba/PBL/build/pbl_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kuba/PBL/install/pbl_bringup', 'merge_install': False, 'path': '/home/kuba/PBL/src/pbl_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_target' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.262s] Level 5:colcon.colcon_core.verb:set package 'pbl_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.263s] DEBUG:colcon.colcon_core.verb:Building package 'pbl_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kuba/PBL/build/pbl_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kuba/PBL/install/pbl_description', 'merge_install': False, 'path': '/home/kuba/PBL/src/pbl_description', 'symlink_install': True, 'test_result_base': None}
+[0.263s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.263s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kuba/PBL/src/odrive_ros2_control' with build type 'ament_cmake'
+[0.264s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kuba/PBL/src/odrive_ros2_control'
+[0.265s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.268s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kuba/PBL/src/pbl_bringup' with build type 'ament_cmake'
+[0.268s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kuba/PBL/src/pbl_bringup'
+[0.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.271s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kuba/PBL/src/pbl_description' with build type 'ament_cmake'
+[0.271s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kuba/PBL/src/pbl_description'
+[0.271s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.271s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kuba/PBL/src/odrive_ros2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kuba/PBL/install/odrive_ros2_control
+[0.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/pbl_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_bringup -- -j16 -l16
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/pbl_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_description -- -j16 -l16
+[0.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/pbl_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_bringup -- -j16 -l16
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/pbl_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_bringup
+[0.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/pbl_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/pbl_description -- -j16 -l16
+[0.372s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pbl_bringup)
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/pbl_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_bringup
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup' for CMake module files
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup' for CMake config files
+[0.375s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbl_bringup', 'cmake_prefix_path')
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.ps1'
+[0.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.dsv'
+[0.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.sh'
+[0.378s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/bin'
+[0.378s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/lib/pkgconfig/pbl_bringup.pc'
+[0.378s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/lib/python3.10/site-packages'
+[0.378s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/bin'
+[0.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.ps1'
+[0.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.dsv'
+[0.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.sh'
+[0.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.bash'
+[0.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.zsh'
+[0.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/pbl_bringup/share/colcon-core/packages/pbl_bringup)
+[0.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/pbl_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_description
+[0.400s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pbl_bringup)
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup' for CMake module files
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup' for CMake config files
+[0.401s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbl_bringup', 'cmake_prefix_path')
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.ps1'
+[0.401s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.dsv'
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/hook/cmake_prefix_path.sh'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/bin'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/lib/pkgconfig/pbl_bringup.pc'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/lib/python3.10/site-packages'
+[0.402s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_bringup/bin'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.ps1'
+[0.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.dsv'
+[0.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.sh'
+[0.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.bash'
+[0.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup/package.zsh'
+[0.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/pbl_bringup/share/colcon-core/packages/pbl_bringup)
+[0.406s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pbl_description)
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description' for CMake module files
+[0.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/pbl_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/pbl_description
+[0.406s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description' for CMake config files
+[0.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbl_description', 'cmake_prefix_path')
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.ps1'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.sh'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/bin'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/lib/pkgconfig/pbl_description.pc'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/lib/python3.10/site-packages'
+[0.408s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/bin'
+[0.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.ps1'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.dsv'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.sh'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.bash'
+[0.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.zsh'
+[0.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/pbl_description/share/colcon-core/packages/pbl_description)
+[0.424s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pbl_description)
+[0.424s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description' for CMake module files
+[0.425s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description' for CMake config files
+[0.425s] Level 1:colcon.colcon_core.shell:create_environment_hook('pbl_description', 'cmake_prefix_path')
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.ps1'
+[0.426s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.dsv'
+[0.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/pbl_description/share/pbl_description/hook/cmake_prefix_path.sh'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/bin'
+[0.426s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/lib/pkgconfig/pbl_description.pc'
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/lib/python3.10/site-packages'
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/pbl_description/bin'
+[0.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.ps1'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.dsv'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.sh'
+[0.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.bash'
+[0.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/pbl_description/share/pbl_description/package.zsh'
+[0.429s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/pbl_description/share/colcon-core/packages/pbl_description)
+[0.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/kuba/PBL/src/odrive_ros2_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kuba/PBL/install/odrive_ros2_control
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_ros2_control -- -j16 -l16
+[0.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_ros2_control -- -j16 -l16
+[0.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kuba/PBL/build/odrive_ros2_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/odrive_ros2_control
+[0.597s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control' for CMake module files
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kuba/PBL/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kuba/PBL/build/odrive_ros2_control
+[0.598s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control' for CMake config files
+[0.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/bin'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/lib/python3.10/site-packages'
+[0.600s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/bin'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[0.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[0.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[0.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odrive_ros2_control)
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control' for CMake module files
+[0.616s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control' for CMake config files
+[0.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('odrive_ros2_control', 'cmake_prefix_path')
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.dsv'
+[0.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/hook/cmake_prefix_path.sh'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/bin'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/lib/pkgconfig/odrive_ros2_control.pc'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/lib/python3.10/site-packages'
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/kuba/PBL/install/odrive_ros2_control/bin'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.sh'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.bash'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/kuba/PBL/install/odrive_ros2_control/share/odrive_ros2_control/package.zsh'
+[0.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kuba/PBL/install/odrive_ros2_control/share/colcon-core/packages/odrive_ros2_control)
+[0.619s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.620s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.620s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.620s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.624s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.632s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kuba/PBL/install/local_setup.ps1'
+[0.633s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kuba/PBL/install/_local_setup_util_ps1.py'
+[0.634s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kuba/PBL/install/setup.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kuba/PBL/install/local_setup.sh'
+[0.635s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kuba/PBL/install/_local_setup_util_sh.py'
+[0.636s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kuba/PBL/install/setup.sh'
+[0.637s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kuba/PBL/install/local_setup.bash'
+[0.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kuba/PBL/install/setup.bash'
+[0.638s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kuba/PBL/install/local_setup.zsh'
+[0.638s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kuba/PBL/install/setup.zsh'

@@ -1,0 +1,2 @@
+Invoking command in '/home/kuba/PBL/build/odrive_can': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_can -- -j16 -l16
+Invoked command in '/home/kuba/PBL/build/odrive_can' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kuba/PBL/build/odrive_can -- -j16 -l16
