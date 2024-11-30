@@ -5,48 +5,60 @@
         <material>Gazebo/Yellow</material>
     </gazebo>
 
-    <gazebo reference="right_wheel_link">
+    <gazebo reference="castor_wheel">
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <gazebo reference="left_wheel_link">
+    <gazebo reference="realsense_camera">
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <gazebo reference="caster_wheel_link">
+    <gazebo reference="jetson_nano">
         <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1"/>
     </gazebo>
+
+    <gazebo reference="odrive_bothwheel_r">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    
+    <gazebo reference="odrive_bothwheel_l">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="rplidar_a2_mount">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="tattu_battery">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
 
     <gazebo>
-        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
-            <!-- Update rate in Hz -->
-            <update_rate>50</update_rate>
+            <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+                
+                <update_rate>50</update_rate>
 
-            <!-- wheels -->
-            <left_joint>left_wheel_joint</left_joint>
-            <right_joint>right_wheel_joint</right_joint>
+                <left_joint>left_wheel_joint</left_joint>
+                <right_joint>right_wheel_joint</right_joint>
 
-            <!-- kinematics -->
-            <wheel_separation>0.45</wheel_separation>
-            <wheel_diameter>0.2</wheel_diameter>
+                <wheel_separation>0.45</wheel_separation>
+                <wheel_diameter>0.2</wheel_diameter>
 
-            <!-- input -->
-            <command_topic>cmd_vel</command_topic>
+                <command_topic>cmd_vel</command_topic>
 
-            <!-- output -->
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <publish_wheel_tf>true</publish_wheel_tf>
+                <publish_odom>false</publish_odom>
+                <publish_odom_tf>false</publish_odom_tf>
+                <publish_wheel_tf>false</publish_wheel_tf>
 
-            <odometry_topic>odom</odometry_topic>
-            <odometry_frame>odom</odometry_frame>
-            <robot_base_frame>base_footprint</robot_base_frame>
-        </plugin>
-    </gazebo>
+                <odometry_topic>odom</odometry_topic>
+                <odometry_frame>odom</odometry_frame>
 
-    <!-- Plugin Gazebo for lidar -->
+                <robot_base_frame>base_link</robot_base_frame>
+            </plugin>
+        </gazebo>
+    
+
     <gazebo reference="rplidar_a2_mount">
         <sensor type="ray" name="lidar_sensor">
         <pose>0 0 0 0 0 0</pose>
@@ -63,7 +75,7 @@
             </scan>
             <range>
             <min>0.15</min>
-            <max>12.0</max> <!-- Maksymalny zasięg RPLIDAR A2M12 wynosi 12 metrów -->
+            <max>12.0</max> 
             </range>
             <noise>
             <type>gaussian</type>
@@ -78,6 +90,4 @@
         </sensor>
     </gazebo>
     
-
-
 </robot>

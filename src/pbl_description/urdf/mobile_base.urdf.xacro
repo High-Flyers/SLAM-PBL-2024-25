@@ -44,19 +44,20 @@
     <xacro:property name="battery_height" value="0.062" />
     <xacro:property name="battery_mass" value="1.974" />
 
-    <link name="base_footprint"></link>
+    <!-- <link name="base_footprint"></link> -->
     
     <link name="base_link">    
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <!-- <mesh filename="file://$(find pbl_description)/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" /> -->
+                <mesh filename="file://$(find pbl_description)/stl/base_link.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -69,13 +70,13 @@
     <link name="castor_wheel">
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/castor_wheel.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/castor_wheel.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/castor_wheel.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/castor_wheel.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -86,14 +87,14 @@
     <link name="realsense_camera">
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/realsense_camera.stl"
+                <mesh filename="file://$(find pbl_description)/stl/realsense_camera.stl"
                 scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/realsense_camera.stl"
+                <mesh filename="file://$(find pbl_description)/stl/realsense_camera.stl"
                 scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
@@ -105,13 +106,13 @@
     <link name="jetson_nano">
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/jetson_nano.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/jetson_nano.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/jetson_nano.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/jetson_nano.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" /> 
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -157,13 +158,13 @@
     <link name="rplidar_a2_mount">
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/rplidar_a2_mount.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/rplidar_a2_mount.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/rplidar_a2_mount.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/rplidar_a2_mount.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -174,13 +175,13 @@
     <link name="tattu_battery">
         <visual>
             <geometry>
-                <mesh filename="package://pbl_description/stl/tattu_battery.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/tattu_battery.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://pbl_description/stl/tattu_battery.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
+                <mesh filename="file://$(find pbl_description)/stl/tattu_battery.stl" scale="${scale_factor} ${scale_factor} ${scale_factor}" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -188,55 +189,62 @@
             xyz="0 0 0" rpy="0 0 0" />
     </link>
 
-    <joint name="base_joint" type="fixed">
-        <parent link="base_link" />
-        <child link="base_footprint" />
+    <!-- <joint name="base_joint" type="revolute">
+        <parent link="base_footprint" />
+        <child link="base_link" />
         <origin xyz="0 0 ${-odrive_radius+base_height}" rpy="0 0 0" /> 
-    </joint>
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
+    </joint> -->
 
-    <joint name="castor_joint" type="fixed">
+    <joint name="castor_joint" type="revolute">
         <parent link="base_link" />
         <child link="castor_wheel" />
         <origin xyz="${-(2/7)*base_length + 0.01} 0 0" rpy="0 0 0" />
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
     </joint>
 
-    <joint name="rplidar_mount_joint" type="fixed">
+    <joint name="rplidar_mount_joint" type="revolute">
         <parent link="base_link" />
         <child link="rplidar_a2_mount" />
         <origin xyz="0 0 0.095" rpy="0 0 0" />
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
     </joint>
 
-    <joint name="realsense_joint" type="fixed">
+    <joint name="realsense_joint" type="revolute">
         <parent link="base_link" />
         <child link="realsense_camera" />
         <origin xyz="${(-base_length/2)+realsense_width} 0 ${base_height}" rpy="0 0 0" />
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
     </joint>
 
-    <joint name="battery_joint" type="fixed">
+    <joint name="battery_joint" type="revolute">
         <parent link="base_link" />
         <child link="tattu_battery" />
         <origin xyz="-0.08 0 ${base_height}" rpy="0 0 0" />
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
     </joint>
 
-    <joint name="jetson_joint" type="fixed">
+    <joint name="jetson_joint" type="revolute">
         <parent link="base_link" />
         <child link="jetson_nano" />
         <origin xyz="${base_length/3} 0 ${base_height}" rpy="0 0 0" />
+        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
     </joint>
 
-    <joint name="left_wheel_joint" type="revolute">
+    <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="odrive_bothwheel_l" />
-        <origin xyz="${odrive_radius + 0.04} ${(-base_width / 2) - (odrive_height/2)} ${base_height/2}" rpy="0 0 0" />
+        <origin xyz="${odrive_radius + 0.04} ${(-base_width / 2) - (odrive_height / 2)} ${base_height / 2}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
-        <limit lower="-3.14159" upper="3.14159" effort="1" velocity="10" />
+        <dynamics damping="0.1" friction="0.0" />
     </joint>
 
-    <joint name="right_wheel_joint" type="revolute">
+    <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link" />
         <child link="odrive_bothwheel_r" />
-        <origin xyz="${odrive_radius + 0.04} ${(base_width / 2) + (odrive_height/2)} ${base_height/2}" rpy="0 0 0" />
+        <origin xyz="${odrive_radius + 0.04} ${(base_width / 2) + (odrive_height / 2)} ${base_height / 2}" rpy="0 0 0" />
         <axis xyz="0 1 0" />
-        <limit lower="-3.14159" upper="3.14159" effort="1" velocity="10" />
+        <dynamics damping="0.1" friction="0.0" />
     </joint>
+
 </robot>

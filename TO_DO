@@ -1,5 +1,6 @@
 TO DO:
 - dodać wszystkie tagi do gazebo
 - zrobić gazebo by działało - już jest wszystko, brakuje tylko tagów w urdf
-- dopasować w pliku params rozmiary naszego jeździka
 
+- dopasować w pliku params rozmiary naszego jeździka
+- dodać inercję do base_footprint i sprawdzić czy działa
