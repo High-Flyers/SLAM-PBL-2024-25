@@ -1,0 +1,25 @@
+teleop_twist_joy:
+  ros__parameters:
+    require_enable_button: true             # Ustawienie wymaga wciśnięcia przycisku aktywującego
+    enable_button: 5                        # Przycisk R1 do aktywacji ruchu
+    enable_turbo_button: 4                  # Przycisk L1 do aktywacji trybu turbo (opcjonalnie)
+    axis_linear.x: 1                        # Oś liniowa dla ruchu przód/tył (zazwyczaj lewy drążek pionowy)
+    axis_linear.y: -1                       # Brak kontroli osi Y
+    axis_linear.z: -1                       # Brak kontroli osi Z
+    axis_angular.yaw: 2                     # Oś kątowa yaw (zazwyczaj prawy drążek poziomy)
+    axis_angular.pitch: -1                  # Brak kontroli osi pitch
+    axis_angular.roll: -1                   # Brak kontroli osi roll
+    scale_linear.x: 0.5                     # Normalna prędkość liniowa
+    scale_linear.y: 0.0
+    scale_linear.z: 0.0
+    scale_linear_turbo.x: 1.0               # Zwiększona prędkość liniowa w trybie turbo
+    scale_linear_turbo.y: 0.0
+    scale_linear_turbo.z: 0.0
+    scale_angular.yaw: 0.5                  # Normalna prędkość kątowa
+    scale_angular.pitch: 0.0
+    scale_angular.roll: 0.0
+    scale_angular_turbo.yaw: 1.0            # Zwiększona prędkość kątowa w trybie turbo
+    scale_angular_turbo.pitch: 0.0
+    scale_angular_turbo.roll: 0.0
+    inverted_reverse: false                 # Czy ma być odwrotna kontrola podczas jazdy wstecz
+

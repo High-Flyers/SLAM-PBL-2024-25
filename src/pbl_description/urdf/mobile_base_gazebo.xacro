@@ -9,13 +9,96 @@
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <gazebo reference="realsense_camera">
+    <gazebo reference="tattu_battery">
         <material>Gazebo/Grey</material>
     </gazebo>
 
     <gazebo reference="jetson_nano">
         <material>Gazebo/Grey</material>
     </gazebo>
+
+    <!-- Gazebo Camera Plugin for Raspberry Pi HQ Camera (IMX477R) -->
+    <gazebo reference="realsense_camera">
+    <material>Gazebo/Grey</material>
+    <sensor name="rpi_camera_sensor" type="camera">
+
+        <pose>0 0 0 0 0 3.14</pose>
+        <visualize>true</visualize>
+        <update_rate>10.0</update_rate>
+
+        <!-- Camera Specifications -->
+        <camera name="rpi_camera">
+        <horizontal_fov>1.3962634</horizontal_fov>  <!-- około 80 stopni -->
+        <image>
+            <width>4056</width>    <!-- 12.3 MPx camera resolution (4056 x 3040) -->
+            <height>3040</height>
+            <format>R8G8B8</format> <!-- RGB format -->
+        </image>
+        <clip>
+            <near>0.02</near> 
+            <far>300.0</far>   
+        </clip>
+        <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+        </noise>
+        </camera>
+
+   
+        <plugin name="raspberry_pi_hq_camera_plugin" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>10.0</updateRate> 
+        <cameraName>salamanca/rpi_camera</cameraName>  
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>realsense_camera</frameName>
+        <!-- Distortion Parameters (adjust if necessary) -->
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+        </plugin>
+    </sensor>
+    </gazebo>
+
+       <gazebo reference="rplidar_a2_mount">
+        <material>Gazebo/Grey</material>
+        <sensor type="ray" name="lidar_sensor">
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+            <scan>
+            <horizontal>
+                <samples>360</samples>
+                <resolution>1</resolution>
+                <min_angle>-3.14159</min_angle>
+                <max_angle>3.14159</max_angle>
+            </horizontal>
+            </scan>
+            <range>
+            <min>0.15</min> //for this lidar minimum distance is 0.2 m
+            <max>12.0</max> //for this lidar maximum distance is 12 m
+            </range>
+            <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+            </noise>
+        </ray>
+        <plugin name="gazebo_ros_range" filename="libgazebo_ros_range.so">
+            <topicName>/scan</topicName>
+            <frameName>lidar_link</frameName>
+        </plugin>
+        </sensor>
+
+    </gazebo>
+
+
+
 
     <gazebo reference="odrive_bothwheel_r">
         <material>Gazebo/Grey</material>
@@ -25,13 +108,7 @@
         <material>Gazebo/Grey</material>
     </gazebo>
 
-    <gazebo reference="rplidar_a2_mount">
-        <material>Gazebo/Grey</material>
-    </gazebo>
-
-    <gazebo reference="tattu_battery">
-        <material>Gazebo/Grey</material>
-    </gazebo>
+ 
 
 
     <gazebo>
@@ -57,37 +134,5 @@
                 <robot_base_frame>base_link</robot_base_frame>
             </plugin>
         </gazebo>
-    
-
-    <gazebo reference="rplidar_a2_mount">
-        <sensor type="ray" name="lidar_sensor">
-        <pose>0 0 0 0 0 0</pose>
-        <visualize>true</visualize>
-        <update_rate>10</update_rate>
-        <ray>
-            <scan>
-            <horizontal>
-                <samples>360</samples>
-                <resolution>1</resolution>
-                <min_angle>-3.14159</min_angle>
-                <max_angle>3.14159</max_angle>
-            </horizontal>
-            </scan>
-            <range>
-            <min>0.15</min>
-            <max>12.0</max> 
-            </range>
-            <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.01</stddev>
-            </noise>
-        </ray>
-        <plugin name="gazebo_ros_range" filename="libgazebo_ros_range.so">
-            <topicName>/scan</topicName>
-            <frameName>lidar_link</frameName>
-        </plugin>
-        </sensor>
-    </gazebo>
     
 </robot>
