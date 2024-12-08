@@ -1,14 +1,20 @@
 TO DO:
-- dodać plugin z kamerą rospberry pi
-
-- sprawdzić poprawność pluginu lidara oraz odrive'ów
 
 - dopasować w pliku params rozmiary naszego jeździka
 
-- dodać slam_toolbox do launch file, keyteleop 
-
-
 - w rviz skanować mapę z slam_toolbox 
 
-- dodać node z podglądem z kamery /image
 - dodać inercję do base_footprint i sprawdzić czy działa
+
+- odoemtria nie działa ponieważ nie ma base_footprint - trzeba je dodać i w pliku z pluginem zamienić base_link na base_footprint
+
+
+Readme:
+
+1. colcon build --symlink-install
+2. source install/setup.bash
+3. ros2 launch pbl_bringup pbl_bringup.launch.xml 
+4. ros2 launch nav2_bringup navigation_launch.py use_sim_time:=True
+5. ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True
+
+

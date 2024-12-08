@@ -5,7 +5,7 @@ set(pbl_bringup_BUILD_DEPENDS "rclcpp" "sensor_msgs" "std_srvs" "rclcpp_componen
 set(pbl_bringup_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_auto" "ament_cmake_ros")
 set(pbl_bringup_BUILD_EXPORT_DEPENDS )
 set(pbl_bringup_BUILDTOOL_EXPORT_DEPENDS )
-set(pbl_bringup_EXEC_DEPENDS "my_robot_description" "robot_state_publisher" "gazebo_ros" "rviz2" "rclcpp" "sensor_msgs" "std_srvs" "rclcpp_components")
+set(pbl_bringup_EXEC_DEPENDS "my_robot_description" "robot_state_publisher" "gazebo_ros" "rviz2" "rclcpp" "sensor_msgs" "std_srvs" "rclcpp_components" "launch" "launch_ros" "rclpy" "geometry_msgs" "nav_msgs" "tf2_ros")
 set(pbl_bringup_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(pbl_bringup_GROUP_DEPENDS )
 set(pbl_bringup_MEMBER_OF_GROUPS )

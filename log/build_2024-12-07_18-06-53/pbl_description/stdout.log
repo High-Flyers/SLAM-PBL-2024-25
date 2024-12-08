@@ -1,0 +1,48 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/common_properties.urdf.xacro
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base.urdf.xacro
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/mobile_base_gazebo.xacro
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//urdf/salamanca.urdf.xacro
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//launch/pbl_salamanca_display.launch.xml
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//rviz/pbl_rviz_config.rviz
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//rviz/test.rviz
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Castor_Wheel_50X19_v4.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Cover v62.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Intel_RealSense_Depth_Camera_D435_v3.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/JetsonXavier_mount_corrected v4.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Jetson_nano_v2_v2.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive S1 Housing Assembly v4 1.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive S1 Housing Assembly v4.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/ODrive_Botwheel_v4.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/OSB_18mm_v28.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Realsens adapter v3.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/Tattu_6S_22_2V_10000Ah_v4.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/base_link.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/castor_wheel.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/dystans v1.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/jetson_nano.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/lidar mount znowu v8.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/odrive s1 mount v6 1.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/odrive s1 mount v6.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/realsense_camera.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/rplidar_a2_mount.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/rplidar_a2m4_r1_v3.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/tattu_battery.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/wheel mount adapter v14 1.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description//stl/wheel mount adapter v14.stl
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/package_run_dependencies/pbl_description
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/parent_prefix_path/pbl_description
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/path.sh
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/environment/path.dsv
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.bash
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.sh
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.zsh
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/local_setup.dsv
+-- Symlinking: /home/kuba/PBL/install/pbl_description/share/pbl_description/package.dsv
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/ament_index/resource_index/packages/pbl_description
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/cmake/pbl_descriptionConfig.cmake
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/cmake/pbl_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/kuba/PBL/install/pbl_description/share/pbl_description/package.xml

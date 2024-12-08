@@ -1,5 +1,6 @@
 /home/kuba/PBL/install/pbl_bringup/share/pbl_bringup//launch/pbl_bringup.launch.xml
 /home/kuba/PBL/install/pbl_bringup/share/pbl_bringup//rviz/pbl_rviz_config.rviz
+/home/kuba/PBL/install/pbl_bringup/share/pbl_bringup//rviz/test.rviz
 /home/kuba/PBL/install/pbl_bringup/share/pbl_bringup//worlds/pbl_world.world
 /home/kuba/PBL/install/pbl_bringup/share/ament_index/resource_index/package_run_dependencies/pbl_bringup
 /home/kuba/PBL/install/pbl_bringup/share/ament_index/resource_index/parent_prefix_path/pbl_bringup

@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
     <let name="urdf_path" 
         value="$(find-pkg-share pbl_description)/urdf/salamanca.urdf.xacro"/> 
@@ -5,37 +6,48 @@
     <let name="urdf_config_path"
         value="$(find-pkg-share pbl_description)/rviz/pbl_rviz_config.rviz"/> 
 
-    <node pkg="robot_state_publisher" exec="robot_state_publisher">
-        <param name="robot_description"
-            value="$(command 'xacro $(var urdf_path)')" />
-    </node>
-
-    <!-- <node pkg="odrive_can"
-        exec="odrive_can_node"
-        name="can_node"
-        namespace="odrive_axis0"
-        output="screen">
-        <param name="node_id" value="0"/>
-        <param name="interface" value="can0"/>
-    </node> -->
-
-    <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
-
-    <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var urdf_config_path)" />
-
     <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
-        <arg name = "world" value="$(find-pkg-share pbl_bringup)/worlds/pbl_world.world"/>
+        <arg name="world" value="$(find-pkg-share pbl_bringup)/worlds/pbl_world.world"/>
     </include>
 
-    <!-- <node pkg="gazebo_ros" exec="spawn_entity.py"
-          args="-topic robot_description -entity my_robot"/> -->
+    <!-- Robot State Publisher -->
+    <node pkg="robot_state_publisher" exec="robot_state_publisher">
+        <param name="robot_description" value="$(command 'xacro $(var urdf_path)')" />
+        <param name="use_sim_time" value="true"/>
+    </node>
 
-     <node pkg="gazebo_ros" exec="spawn_entity.py"
-      args="-topic robot_description -entity my_robot -x 3.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 3.14"/>
-     
-<!-- 
+    <!-- Joint State Publisher GUI -->
+    <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui">
+        <param name="use_sim_time" value="true"/>
+    </node>
+
+    <!-- RViz2 Visualization -->
+    <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var urdf_config_path)">
+        <param name="use_sim_time" value="true"/>
+    </node>
+
+    <!-- Spawn Robot in Gazebo -->
     <node pkg="gazebo_ros" exec="spawn_entity.py"
-        args="-file /home/kuba/PBL/src/pbl_description/urdf/salamnca.sdf -entity my_robot" /> -->
+          args="-topic robot_description -entity my_robot -x 3.0 -y 0.0 -z 0.0 -R 0.0 -P 0.0 -Y 3.14">
+        <param name="use_sim_time" value="true"/>
+    </node>
 
+    <!-- Spawn Robot Using SDF File -->
+    <!-- <node pkg="gazebo_ros" exec="spawn_entity.py"
+          args="-file /home/kuba/PBL/src/pbl_description/urdf/salamnca.sdf -entity my_robot">
+        <param name="use_sim_time" value="true"/>
+    </node> -->
+
+    <!-- Joystick Movement for Salamanca Robot -->
+    <!-- <node pkg="teleop_twist_joy" exec="teleop_node" name="teleop_node" output="screen">
+        <param name="joy_device" value="/dev/input/js0"/>
+        <param name="cmd_vel_topic" value="/cmd_vel"/>
+        <param name="use_sim_time" value="true"/>
+    </node>
+
+    joy_node
+    <node pkg="joy" exec="joy_node" name="joy_node" output="screen">
+        <param name="dev" value="/dev/input/js0"/>
+    </node> -->
 
 </launch>

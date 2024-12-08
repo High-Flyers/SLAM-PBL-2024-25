@@ -44,9 +44,8 @@
     <xacro:property name="battery_height" value="0.062" />
     <xacro:property name="battery_mass" value="1.974" />
 
-    <!-- <link name="base_footprint"></link> -->
+    <link name="base_footprint"></link>
 
-    
     <link name="base_link">    
         <visual>
             <geometry>
@@ -190,12 +189,12 @@
             xyz="0 0 0" rpy="0 0 0" />
     </link>
 
-    <!-- <joint name="base_joint" type="revolute">
+    <joint name="base_joint" type="fixed">
         <parent link="base_footprint" />
         <child link="base_link" />
         <origin xyz="0 0 ${-odrive_radius+base_height}" rpy="0 0 0" /> 
-        <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" />
-    </joint> -->
+        <!-- <limit lower="0.0" upper="0.0" effort="100.0" velocity="-1.0" /> -->
+    </joint>
 
     <joint name="castor_joint" type="revolute">
         <parent link="base_link" />
